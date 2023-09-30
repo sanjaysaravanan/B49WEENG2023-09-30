@@ -1,0 +1,65 @@
+
+Topics:
+
+  React Deployment:
+    Netlify
+    1. Add New Site using import an existing project
+    2. Select a repo
+    3. Check the setting ( All default values no changes needed )
+    4. Deploy 
+
+  How to start an existing react project:
+    npm run dev
+
+  auto formatting with eslint:
+    .vscode/settings.json
+    {
+      "editor.formatOnSave": true,
+      "editor.formatOnType": false,
+      "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+      }
+    }
+
+  Components Overview
+    props: 
+      the essential information needed to create a component for displaying the information
+
+    proptypes:
+      specifying the type of the props values needed to create a component
+      this helps in reducing unwanted errors because of typeerror
+
+  1. Working with array lists
+      List Rendering
+
+  2. Usage of keys:
+      key props for a component is used to identify the element uniquely by VDOM
+      Do not use array index for key in component that will lead to confusion during interactions
+
+  3. Styles and Module styles
+      inline style --> using it as object
+      HTML Inline
+      <img src='https://image.com/image.png' style="height: 200px; width: 100px" />
+      React Inline
+      <img src={props.imageUrl} style={{ height: '200px', width: '100px' }} />
+
+      External Styling:
+        normal styling using .css
+        module styling using .module.css
+          import styles from './movie.module.css';
+          module styling only classNames and tags are allowed
+
+Next Session:
+  4. Conditional rendering
+  5. Handling Events
+  6. Props vs State
+  
+Task:
+
+  1. Deploy & Submit Day 20 Task https://docs.google.com/document/d/11URBvZUsXT4Sr3YtCuv-5gcOHmkOmX976h-QKcXbWqs/edit
+
+  2. Practice the Styling & module stylings and array rendering in react applciation
+
+
+
+
